@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中正樓主題校園紀念文創商品 | 官方線上預購</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            500: '#334e68',
+                            800: '#102a43',
+                            900: '#0b1b2b',
+                            gold: '#c6a15b',
+                            goldHover: '#b08b46'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Serif TC', sans-serif;
+            background-color: #f8fafc;
+            color: #102a43;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- 頂部 Header -->
+    <header class="bg-brand-900 text-white border-b border-brand-800 sticky top-0 z-50 backdrop-blur-md bg-opacity-95">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- 太陽圖騰 Icon -->
+                <svg class="w-7 h-7 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="4" stroke-width="2"/>
+                    <path stroke-linecap="round" stroke-width="2" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"/>
+                </svg>
+                <span class="font-serif font-bold text-lg tracking-wider">華興高中紀念文創</span>
+            </div>
+            <nav class="text-sm font-medium text-slate-300 space-x-6">
+                <a href="#products" class="hover:text-brand-gold transition-colors">商品系列</a>
+                <a href="#order" class="hover:text-brand-gold transition-colors">線上預購</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主頁 Hero 區塊 -->
+    <section class="bg-gradient-to-b from-brand-900 via-brand-800 to-slate-900 text-white py-16 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <p class="text-brand-gold text-sm tracking-widest font-semibold uppercase mb-3">Campus Merchandise Collection</p>
+            <h1 class="text-3xl sm:text-5xl font-serif font-bold tracking-tight mb-6 leading-tight">
+                中正樓主題校園紀念文創商品
+            </h1>
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-light">
+                凝聚溫暖回億與知性歲月，將經典建築線條與「陽光、健康、知性」之校訓意象，精緻融入日常隨身物件。
+            </p>
+        </div>
+    </section>
+
+    <!-- 商品展示區塊 -->
+    <section id="products" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl font-serif font-bold text-brand-900">典藏紀念商品系列</h2>
+            <div class="w-12 h-0.5 bg-brand-gold mx-auto mt-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- 商品 1 -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200/80 overflow-hidden hover:shadow-md transition-shadow duration-300 flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="bg-slate-100 rounded-lg p-4 mb-6 aspect-square flex items-center justify-center overflow-hidden">
+                        <img src="https://via.placeholder.com/400x400/102a43/ffffff?text=Thermo+Bottle" alt="極簡霧面磨砂保溫瓶" class="w-full h-full object-cover rounded-md">
+                    </div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-serif text-xl font-bold text-brand-900">極簡霧面磨砂保溫瓶</h3>
+                        <span class="text-brand-gold font-bold font-sans">NT$ 500</span>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        採用霧面磨砂黑色金屬瓶身，雷射雕刻中正樓建築線條圖騰與太陽精神標語。溫水隨身，象徵溫暖記憶歷久彌新。
+                    </p>
+                </div>
+                <div class="px-6 pb-6 pt-0">
+                    <button onclick="selectProduct('bottle')" class="w-full py-2.5 px-4 bg-slate-100 hover:bg-brand-50 text-brand-900 font-semibold rounded-lg text-sm transition-colors border border-slate-200">
+                        選擇此商品
+                    </button>
+                </div>
+            </div>
+
+            <!-- 商品 2 -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200/80 overflow-hidden hover:shadow-md transition-shadow duration-300 flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="bg-slate-100 rounded-lg p-4 mb-6 aspect-square flex items-center justify-center overflow-hidden">
+                        <img src="https://via.placeholder.com/400x400/334e68/ffffff?text=Hardcover+Notebook" alt="經典深藍精裝布面筆記本" class="w-full h-full object-cover rounded-md">
+                    </div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-serif text-xl font-bold text-brand-900">經典深藍精裝布面筆記本</h3>
+                        <span class="text-brand-gold font-bold font-sans">NT$ 500</span>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        沉穩深藍織布硬殼封面，搭配燙金太陽圖騰與核心精神標語。內含厚實象牙白純紙與金色絲帶書籤，記錄知性時光。
+                    </p>
+                </div>
+                <div class="px-6 pb-6 pt-0">
+                    <button onclick="selectProduct('notebook')" class="w-full py-2.5 px-4 bg-slate-100 hover:bg-brand-50 text-brand-900 font-semibold rounded-lg text-sm transition-colors border border-slate-200">
+                        選擇此商品
+                    </button>
+                </div>
+            </div>
+
+            <!-- 商品 3 -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200/80 overflow-hidden hover:shadow-md transition-shadow duration-300 flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="bg-slate-100 rounded-lg p-4 mb-6 aspect-square flex items-center justify-center overflow-hidden">
+                        <img src="https://via.placeholder.com/400x400/e2e8f0/102a43?text=Ceramic+Coaster" alt="中正樓藝術吸水陶瓷杯墊" class="w-full h-full object-cover rounded-md">
+                    </div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-serif text-xl font-bold text-brand-900">中正樓藝術吸水陶瓷杯墊</h3>
+                        <span class="text-brand-gold font-bold font-sans">NT$ 500</span>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        選用吸水陶瓷，周圍佐以古典裝飾邊框，彩繪呈現太陽上升於山海之間的經典徽章，讓日常小憩皆能連結空間歷史。
+                    </p>
+                </div>
+                <div class="px-6 pb-6 pt-0">
+                    <button onclick="selectProduct('coaster')" class="w-full py-2.5 px-4 bg-slate-100 hover:bg-brand-50 text-brand-900 font-semibold rounded-lg text-sm transition-colors border border-slate-200">
+                        選擇此商品
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 訂購表單區塊 -->
+    <section id="order" class="bg-slate-100 py-16 px-6 border-t border-slate-200">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg border border-slate-200/80 p-8 sm:p-10">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-serif font-bold text-brand-900">商品預購單</h2>
+                <p class="text-slate-500 text-sm mt-1">請選擇預購數量並填寫基本聯絡資料</p>
+            </div>
+
+            <form id="orderForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                <!-- 商品選擇與數量 -->
+                <div class="space-y-4 border-b border-slate-100 pb-6">
+                    <label class="block text-sm font-semibold text-brand-900 mb-2">預購商品項目</label>
+                    
+                    <!-- 項目 1 -->
+                    <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-lg border border-slate-200">
+                        <div>
+                            <p class="font-medium text-sm text-brand-900">極簡霧面磨砂保溫瓶</p>
+                            <p class="text-xs text-slate-500">NT$ 500 / 件</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <input type="number" id="qty-bottle" min="0" value="0" onchange="calculateTotal()" class="w-16 text-center border border-slate-300 rounded-md py-1 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <!-- 項目 2 -->
+                    <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-lg border border-slate-200">
+                        <div>
+                            <p class="font-medium text-sm text-brand-900">經典深藍精裝布面筆記本</p>
+                            <p class="text-xs text-slate-500">NT$ 500 / 本</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <input type="number" id="qty-notebook" min="0" value="0" onchange="calculateTotal()" class="w-16 text-center border border-slate-300 rounded-md py-1 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <!-- 項目 3 -->
+                    <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-lg border border-slate-200">
+                        <div>
+                            <p class="font-medium text-sm text-brand-900">中正樓藝術吸水陶瓷杯墊</p>
+                            <p class="text-xs text-slate-500">NT$ 500 / 個</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <input type="number" id="qty-coaster" min="0" value="0" onchange="calculateTotal()" class="w-16 text-center border border-slate-300 rounded-md py-1 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 訂購人資訊 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">訂購人姓名 *</label>
+                        <input type="text" required placeholder="請輸入姓名" class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">聯絡電話 *</label>
+                        <input type="tel" required placeholder="0912-345-678" class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">電子郵件 *</label>
+                    <input type="email" required placeholder="example@email.com" class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">取貨方式</label>
+                    <select class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
+                        <option>校園現場自取（免運費）</option>
+                        <option>郵寄到府（運費另計 NT$ 60）</option>
+                    </select>
+                </div>
+
+                <!-- 結帳金額 -->
+                <div class="bg-brand-50 rounded-xl p-4 flex justify-between items-center border border-brand-100">
+                    <span class="font-medium text-brand-900 text-sm">預估總金額：</span>
+                    <span id="totalPrice" class="text-2xl font-serif font-bold text-brand-900">NT$ 0</span>
+                </div>
+
+                <!-- 送出按鈕 -->
+                <button type="submit" class="w-full py-3.5 bg-brand-900 hover:bg-brand-800 text-white font-semibold rounded-xl text-base shadow-md transition-all duration-200 flex items-center justify-center space-x-2">
+                    <span>確認送出預購單</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-slate-400 py-8 px-6 text-center text-xs border-t border-brand-800">
+        <p class="mb-2">陽光 Sunshine ｜ 健康 Health ｜ 知性 Wisdom</p>
+        <p>© 華興高級中等學校 中正樓紀念文創商品專案 All Rights Reserved.</p>
+    </footer>
+
+    <!-- JS 功能邏輯 -->
+    <script>
+        function calculateTotal() {
+            const bottleQty = parseInt(document.getElementById('qty-bottle').value) || 0;
+            const notebookQty = parseInt(document.getElementById('qty-notebook').value) || 0;
+            const coasterQty = parseInt(document.getElementById('qty-coaster').value) || 0;
+
+            const total = (bottleQty + notebookQty + coasterQty) * 500;
+            document.getElementById('totalPrice').innerText = 'NT$ ' + total.toLocaleString();
+        }
+
+        function selectProduct(type) {
+            const inputMap = {
+                'bottle': 'qty-bottle',
+                'notebook': 'qty-notebook',
+                'coaster': 'qty-coaster'
+            };
+            const input = document.getElementById(inputMap[type]);
+            input.value = parseInt(input.value) + 1;
+            calculateTotal();
+            
+            // 平滑滾動至訂購單
+            document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const total = document.getElementById('totalPrice').innerText;
+            if (total === 'NT$ 0') {
+                alert('請至少選擇一項商品數量！');
+                return;
+            }
+            alert('感謝您的預購！我們已收到您的訂單需求，將會有專人與您聯繫確認。');
+        }
+    </script>
+</body>
+</html>
